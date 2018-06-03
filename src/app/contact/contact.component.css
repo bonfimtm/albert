@@ -1,0 +1,54 @@
+.social a {
+	color: black;
+}
+
+.btn-default {
+	/* background-color: transparent; */
+	/* background-color: #FFF5F0; */
+	background-color: rgb(255, 245, 240);
+	border: 2px solid #080808;
+	/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5; */
+}
+
+.typewriter-background {
+	background-image: url(/assets/img/hero-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: scroll;
+	background-size: cover;
+	width: 100%;
+	margin: 0px;
+}
+
+@media screen and (min-width: 1025px) {
+	.typewriter-background {
+        /* Create the parallax scrolling effect */
+		background-attachment: fixed;
+	}
+}
+
+input.form-control, textarea.form-control {
+	/* background-color: transparent; */
+	/* background-image: url(/assets/img/bg-pattern.png); */
+	/* background-repeat: repeat; */
+	/* background-color: rgb(251, 251, 188); */
+	/* background-color: rgb(203, 182, 155); */
+	background-color: #FFF5F0;
+	/* color: #eee; */
+	/* color: #FFF8F5; */
+	border-color: #080808;
+}
+
+.text-clear {
+	color: white;
+	font-size: xx-large;
+}
+
+.text-clear p {
+	font-weight: lighter;
+	text-transform: uppercase;
+}
