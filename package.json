@@ -6,9 +6,7 @@
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 -o",
     "build": "ng build --prod",
-    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
     "cleanall": "rm -rf node_modules dist"
   },
   "dependencies": {

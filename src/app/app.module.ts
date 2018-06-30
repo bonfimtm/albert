@@ -16,7 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MusicComponent } from './music/music.component';
 import { VideosComponent } from './videos/videos.component';
 import { ParallaxComponent } from './parallax/parallax.component';
-import { MailService } from "./mail.service";
+import { MailService } from './mail.service';
 
 @NgModule({
   declarations: [
