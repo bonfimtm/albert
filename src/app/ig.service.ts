@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
+import { map, catchError } from 'rxjs/operators';
 
 @Injectable()
 export class IgService {
@@ -17,15 +16,17 @@ export class IgService {
   }
 
   getBio(): Observable<any[]> {
-    return this.http.get(this.bioUrl, this.options)
-      .map(this.extractData)
-      .catch(this.handleError);
+    return this.http.get(this.bioUrl, this.options).pipe(
+      map(this.extractData),
+      catchError(this.handleError),
+    );
   }
 
   getMediaRecent(): Observable<any[]> {
-    return this.http.get(this.mediaRecentUrl, this.options)
-      .map(this.extractData)
-      .catch(this.handleError);
+    return this.http.get(this.mediaRecentUrl, this.options).pipe(
+      map(this.extractData),
+      catchError(this.handleError),
+    );
   }
 
   private extractData(res: Response) {

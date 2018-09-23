@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
+
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { InstafeedComponent } from './instafeed/instafeed.component';
@@ -16,7 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MusicComponent } from './music/music.component';
 import { VideosComponent } from './videos/videos.component';
 import { ParallaxComponent } from './parallax/parallax.component';
-import { MailService } from './mail.service';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -37,9 +41,11 @@ import { MailService } from './mail.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireFunctionsModule,
   ],
-  providers: [IgService, MailService],
+  providers: [IgService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
