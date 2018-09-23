@@ -8,12 +8,10 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class IgService {
 
-  private baseUrl = 'http://bonfimtm.rf.gd/ig/?p=albert';
-  private bioUrl = `${this.baseUrl}&q=bio`;
-  private mediaRecentUrl = `${this.baseUrl}&q=media-recent`;
-  private options = {
-    withCredentials: true,
-  };
+  private baseUrl = 'https://bonfimtm-services.herokuapp.com/albert/instagram';
+  private bioUrl = this.baseUrl;
+  private mediaRecentUrl = `${this.baseUrl}/feed`;
+  private options = { withCredentials: false };
 
   constructor(private http: Http) {
   }
