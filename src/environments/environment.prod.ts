@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  serverUrl: 'https://178.62.212.37',
   firebase: {
     apiKey: 'AIzaSyAg5FvvPoEkE3sn43vKvX6n9ZeE8hQ1Gqk',
     authDomain: 'albert-a66bc.firebaseapp.com',

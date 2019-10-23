@@ -4,10 +4,12 @@ import { Observable } from 'rxjs';
 
 import { map, catchError } from 'rxjs/operators';
 
+import { environment } from '../environments/environment';
+
 @Injectable()
 export class IgService {
 
-  private baseUrl = 'https://bonfimtm-services.herokuapp.com/albert/instagram';
+  private baseUrl = `${environment.serverUrl}/albert/instagram`;
   private bioUrl = this.baseUrl;
   private mediaRecentUrl = `${this.baseUrl}/feed`;
   private options = { withCredentials: false };
