@@ -3,11 +3,36 @@ p {
 }
 
 .album-cover {
-    width: 100%
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .album-cover {
-        width: 50%
+        width: 50%;
+    }
+}
+
+#movimento-front, #movimento-back {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    height: 400px;
+    margin: 10px;
+}
+
+#movimento-front {
+    background-image: url(/assets/img/movimento-front.jpg);
+}
+
+#movimento-back {
+    background-image: url(/assets/img/movimento-back.jpg);
+}
+
+@media screen and (min-width: 768px) {
+    #movimento-front {
+        background-position: top right;
+    }
+    #movimento-back {
+        background-position: top left;
     }
 }
