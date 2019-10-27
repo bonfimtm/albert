@@ -11,3 +11,15 @@ p {
 	height: 150px;
 	margin: auto;
 }
+
+#member-1 {
+	background-image: url(/assets/img/member-1.jpg);
+}
+
+#member-2 {
+	background-image: url(/assets/img/member-2.jpg);
+}
+
+#member-3 {
+	background-image: url(/assets/img/member-3.jpg);
+}

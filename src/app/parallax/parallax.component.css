@@ -18,6 +18,10 @@
 	}
 }
 
+#home.parallax {
+  background-image: url(/assets/img/hero-1.jpg);
+}
+
 .parallax {
     background-attachment: scroll;
     background-position: center top;
