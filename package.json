@@ -5,7 +5,7 @@
   "repository": "https://github.com/bonfimtm/albert.git",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host=0.0.0.0 --port=4200 -o",
+    "start": "ng serve --host=0.0.0.0 --port=8000",
     "build": "ng build --prod --base-href / --deploy-url /",
     "lint": "ng lint",
     "cleanall": "rm -rf node_modules dist"
